@@ -1,0 +1,40 @@
+<body>
+<h1>Welcome!</h1>
+
+<form method="POST" th:action="@{/insert}" th:object="${customer}">
+
+    <div>
+        <label for="name">nome: </label>
+        <input type="text" id="name" th:field="*{name}" placeholder="inserisci il tuo nome" required />
+        <span class="validationError"
+              th:if="${#fields.hasErrors('name')}"
+              th:errors="${customer.name}">Name Error
+        </span>
+
+    </div>
+    <div>
+        <label for="surname">cognome: </label>
+        <input type="text" id="surname" th:field="*{surname}" placeholder="inserisci il tuo cognome" required />
+        <span class="validationError"
+              th:if="${#fields.hasErrors('surname')}"
+              th:errors="${customer.surname}">Name Error
+        </span>
+
+    </div>
+    <div>
+        <label for="age">età: </label>
+        <input type="text" id="age" th:field="*{age}" placeholder="inserisci la tua età" required />
+        <span class="validationError"
+              th:if="${#fields.hasErrors('age')}"
+              th:errors="${customer.age}">Name Error
+        </span>
+
+    </div>
+
+    <div>
+        <button type="submit">salva customer</button>
+    </div>
+</form>
+
+</body>
+</html>

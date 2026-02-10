@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-load.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\resources\\templates\\user-load.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-insert.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\resources\\templates\\user-insert.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\hello.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\resources\\templates\\hello.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "user-load.html",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-load.html",
+              "RelativeDocumentMoniker": "src\\main\\resources\\templates\\user-load.html",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-load.html",
+              "RelativeToolTip": "src\\main\\resources\\templates\\user-load.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T21:17:18.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HelloController.java",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java",
+              "RelativeDocumentMoniker": "src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java",
+              "RelativeToolTip": "src\\main\\java\\ch\\samt\\esercizio1\\controller\\HelloController.java",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVEhL1ZVLiBxFGMd/1T09j\u002B7tzOzMbCbsRiNG40FwDx4EEQUJBFEIXvTmIYfcchYSRAlCThGVKL4ScogBT148elgPggaSSzS\u002BNptsVpKZYV\u002BTSTYz01X1eejZ7h3pWcHEgx80FF9V//7fq7rhvzQR\u002BbvrgZvaXETnj4rzzH7s4jtwoYa9PIVeKNO8E7KY81kql2j6Pm0/YLkUsFYosV4s0s0X6HolooJC8g4ml6Mw22DhpQkF4CRKjW/R383B8utY7y7ib2DDCK8IgXiU7vkwqGAGNXqDBrejGVai3bT1Htp2ho40uEOViaen8KYT7JYMPt0v5pcSh06ZZBPAYonQRBg0erjW8Vpin8YMH43zwxUGEVx91h/NQF\u002BZRC9N3Bdci8FuWOjahJEKLIToW36y8f78GT6YP8vxufdG4K8eeY1Tc6cz4RoNfQfnboJJBQaLAYNmAMPIzx39gp17Gpx\u002B8\u002BORyP1KwNTMzky4xuD0FG6WwPpqyMq9MCnLcmsFgHazPVIWS5x\u002BFlxjcCOD10vHPxFYcKr8XJpOam6Imx2/nNbcIsimP6MPaqDwesnsbBEI6/xWbiQNDRtlAMq7KkRiePnQQfbO7uPx2Se43elkwrUYlAY3SvipwI3JKtcm63G0aI59eRyAt8\u002BdQKN54eCLfHXxa5478DwfvfthJtxgUZHC7acCSS5vvPK9tHI7sN8cHjuKfsWn0\u002B3S171MuMGw77N1ik3Lj28Fo/fgeq3KzaA8Fq7RrK6tbQs3WCSyuFlNXpqq0w7DsfBxNd8KNxg8q/DSwqQCreoOOiX/vuBGLHltcdKLnAq4eVBqcyz/HRzAs4pcyk8FHE9QrkpAP\u002Bk/\u002BFVfY97c4Lq5yZ\u002BmxYWrl7aFA\u002BQBz2T0wMuD40gS5WPuwzziTrPbbbDLrVN3Kzz16JPbwgE8A7msHuQKCscdf0P/KfJNy2vB1WkGidRD5/vidTfiD4FS2OEZQSHDk4IDarihFCKxvxhpJrQl7AtVx6P6e46zn8R/tERg78lV2WilESmxqOE/W8EQJsiW9AWFKIVnLXUdURsINe0QEHDm80p68H9tfwGfCJMVne1qSgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-09T21:11:32.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.java",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java",
+              "RelativeDocumentMoniker": "src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java",
+              "RelativeToolTip": "src\\main\\java\\ch\\samt\\esercizio1\\controller\\UserController.java",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwDUAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVEhL1ZVLiBxFGMd/1T09j\u002B7tzOzMbCbsRiNG40FwDx4EEQUJBFEIXvTmIYfcchYSRAlCThGVKL4ScogBT148elgPggaSSzS\u002BNptsVpKZYV\u002BTSTYz01X1eejZ7h3pWcHEgx80FF9V//7fq7rhvzQR\u002BbvrgZvaXETnj4rzzH7s4jtwoYa9PIVeKNO8E7KY81kql2j6Pm0/YLkUsFYosV4s0s0X6HolooJC8g4ml6Mw22DhpQkF4CRKjW/R383B8utY7y7ib2DDCK8IgXiU7vkwqGAGNXqDBrejGVai3bT1Htp2ho40uEOViaen8KYT7JYMPt0v5pcSh06ZZBPAYonQRBg0erjW8Vpin8YMH43zwxUGEVx91h/NQF\u002BZRC9N3Bdci8FuWOjahJEKLIToW36y8f78GT6YP8vxufdG4K8eeY1Tc6cz4RoNfQfnboJJBQaLAYNmAMPIzx39gp17Gpx\u002B8\u002BORyP1KwNTMzky4xuD0FG6WwPpqyMq9MCnLcmsFgHazPVIWS5x\u002BFlxjcCOD10vHPxFYcKr8XJpOam6Imx2/nNbcIsimP6MPaqDwesnsbBEI6/xWbiQNDRtlAMq7KkRiePnQQfbO7uPx2Se43elkwrUYlAY3SvipwI3JKtcm63G0aI59eRyAt8\u002BdQKN54eCLfHXxa5478DwfvfthJtxgUZHC7acCSS5vvPK9tHI7sN8cHjuKfsWn0\u002B3S171MuMGw77N1ik3Lj28Fo/fgeq3KzaA8Fq7RrK6tbQs3WCSyuFlNXpqq0w7DsfBxNd8KNxg8q/DSwqQCreoOOiX/vuBGLHltcdKLnAq4eVBqcyz/HRzAs4pcyk8FHE9QrkpAP\u002Bk/\u002BFVfY97c4Lq5yZ\u002BmxYWrl7aFA\u002BQBz2T0wMuD40gS5WPuwzziTrPbbbDLrVN3Kzz16JPbwgE8A7msHuQKCscdf0P/KfJNy2vB1WkGidRD5/vidTfiD4FS2OEZQSHDk4IDarihFCKxvxhpJrQl7AtVx6P6e46zn8R/tERg78lV2WilESmxqOE/W8EQJsiW9AWFKIVnLXUdURsINe0QEHDm80p68H9tfwGfCJMVne1qSgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-09T21:12:54.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.java",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java",
+              "RelativeDocumentMoniker": "src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java",
+              "RelativeToolTip": "src\\main\\java\\ch\\samt\\esercizio1\\domain\\User.java",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVEhL1ZVLiBxFGMd/1T09j\u002B7tzOzMbCbsRiNG40FwDx4EEQUJBFEIXvTmIYfcchYSRAlCThGVKL4ScogBT148elgPggaSSzS\u002BNptsVpKZYV\u002BTSTYz01X1eejZ7h3pWcHEgx80FF9V//7fq7rhvzQR\u002BbvrgZvaXETnj4rzzH7s4jtwoYa9PIVeKNO8E7KY81kql2j6Pm0/YLkUsFYosV4s0s0X6HolooJC8g4ml6Mw22DhpQkF4CRKjW/R383B8utY7y7ib2DDCK8IgXiU7vkwqGAGNXqDBrejGVai3bT1Htp2ho40uEOViaen8KYT7JYMPt0v5pcSh06ZZBPAYonQRBg0erjW8Vpin8YMH43zwxUGEVx91h/NQF\u002BZRC9N3Bdci8FuWOjahJEKLIToW36y8f78GT6YP8vxufdG4K8eeY1Tc6cz4RoNfQfnboJJBQaLAYNmAMPIzx39gp17Gpx\u002B8\u002BORyP1KwNTMzky4xuD0FG6WwPpqyMq9MCnLcmsFgHazPVIWS5x\u002BFlxjcCOD10vHPxFYcKr8XJpOam6Imx2/nNbcIsimP6MPaqDwesnsbBEI6/xWbiQNDRtlAMq7KkRiePnQQfbO7uPx2Se43elkwrUYlAY3SvipwI3JKtcm63G0aI59eRyAt8\u002BdQKN54eCLfHXxa5478DwfvfthJtxgUZHC7acCSS5vvPK9tHI7sN8cHjuKfsWn0\u002B3S171MuMGw77N1ik3Lj28Fo/fgeq3KzaA8Fq7RrK6tbQs3WCSyuFlNXpqq0w7DsfBxNd8KNxg8q/DSwqQCreoOOiX/vuBGLHltcdKLnAq4eVBqcyz/HRzAs4pcyk8FHE9QrkpAP\u002Bk/\u002BFVfY97c4Lq5yZ\u002BmxYWrl7aFA\u002BQBz2T0wMuD40gS5WPuwzziTrPbbbDLrVN3Kzz16JPbwgE8A7msHuQKCscdf0P/KfJNy2vB1WkGidRD5/vidTfiD4FS2OEZQSHDk4IDarihFCKxvxhpJrQl7AtVx6P6e46zn8R/tERg78lV2WilESmxqOE/W8EQJsiW9AWFKIVnLXUdURsINe0QEHDm80p68H9tfwGfCJMVne1qSgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-09T21:13:05.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "hello.html",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\hello.html",
+              "RelativeDocumentMoniker": "src\\main\\resources\\templates\\hello.html",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\hello.html",
+              "RelativeToolTip": "src\\main\\resources\\templates\\hello.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T21:13:46.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "user-insert.html",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-insert.html",
+              "RelativeDocumentMoniker": "src\\main\\resources\\templates\\user-insert.html",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\resources\\templates\\user-insert.html",
+              "RelativeToolTip": "src\\main\\resources\\templates\\user-insert.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-09T21:14:14.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Esercizio1ApplicationTests.java",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java",
+              "RelativeDocumentMoniker": "src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java",
+              "RelativeToolTip": "src\\test\\java\\ch\\samt\\esercizio1\\Esercizio1ApplicationTests.java",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVEhL1ZVLiBxFGMd/1T09j\u002B7tzOzMbCbsRiNG40FwDx4EEQUJBFEIXvTmIYfcchYSRAlCThGVKL4ScogBT148elgPggaSSzS\u002BNptsVpKZYV\u002BTSTYz01X1eejZ7h3pWcHEgx80FF9V//7fq7rhvzQR\u002BbvrgZvaXETnj4rzzH7s4jtwoYa9PIVeKNO8E7KY81kql2j6Pm0/YLkUsFYosV4s0s0X6HolooJC8g4ml6Mw22DhpQkF4CRKjW/R383B8utY7y7ib2DDCK8IgXiU7vkwqGAGNXqDBrejGVai3bT1Htp2ho40uEOViaen8KYT7JYMPt0v5pcSh06ZZBPAYonQRBg0erjW8Vpin8YMH43zwxUGEVx91h/NQF\u002BZRC9N3Bdci8FuWOjahJEKLIToW36y8f78GT6YP8vxufdG4K8eeY1Tc6cz4RoNfQfnboJJBQaLAYNmAMPIzx39gp17Gpx\u002B8\u002BORyP1KwNTMzky4xuD0FG6WwPpqyMq9MCnLcmsFgHazPVIWS5x\u002BFlxjcCOD10vHPxFYcKr8XJpOam6Imx2/nNbcIsimP6MPaqDwesnsbBEI6/xWbiQNDRtlAMq7KkRiePnQQfbO7uPx2Se43elkwrUYlAY3SvipwI3JKtcm63G0aI59eRyAt8\u002BdQKN54eCLfHXxa5478DwfvfthJtxgUZHC7acCSS5vvPK9tHI7sN8cHjuKfsWn0\u002B3S171MuMGw77N1ik3Lj28Fo/fgeq3KzaA8Fq7RrK6tbQs3WCSyuFlNXpqq0w7DsfBxNd8KNxg8q/DSwqQCreoOOiX/vuBGLHltcdKLnAq4eVBqcyz/HRzAs4pcyk8FHE9QrkpAP\u002Bk/\u002BFVfY97c4Lq5yZ\u002BmxYWrl7aFA\u002BQBz2T0wMuD40gS5WPuwzziTrPbbbDLrVN3Kzz16JPbwgE8A7msHuQKCscdf0P/KfJNy2vB1WkGidRD5/vidTfiD4FS2OEZQSHDk4IDarihFCKxvxhpJrQl7AtVx6P6e46zn8R/tERg78lV2WilESmxqOE/W8EQJsiW9AWFKIVnLXUdURsINe0QEHDm80p68H9tfwGfCJMVne1qSgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-09T21:14:25.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Esercizio1Application.java",
+              "DocumentMoniker": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java",
+              "RelativeDocumentMoniker": "src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java",
+              "ToolTip": "D:\\2025-26\\modulo 223\\esercizi\\esercizio1\\src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java",
+              "RelativeToolTip": "src\\main\\java\\ch\\samt\\esercizio1\\Esercizio1Application.java",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVEhL1ZVLiBxFGMd/1T09j\u002B7tzOzMbCbsRiNG40FwDx4EEQUJBFEIXvTmIYfcchYSRAlCThGVKL4ScogBT148elgPggaSSzS\u002BNptsVpKZYV\u002BTSTYz01X1eejZ7h3pWcHEgx80FF9V//7fq7rhvzQR\u002BbvrgZvaXETnj4rzzH7s4jtwoYa9PIVeKNO8E7KY81kql2j6Pm0/YLkUsFYosV4s0s0X6HolooJC8g4ml6Mw22DhpQkF4CRKjW/R383B8utY7y7ib2DDCK8IgXiU7vkwqGAGNXqDBrejGVai3bT1Htp2ho40uEOViaen8KYT7JYMPt0v5pcSh06ZZBPAYonQRBg0erjW8Vpin8YMH43zwxUGEVx91h/NQF\u002BZRC9N3Bdci8FuWOjahJEKLIToW36y8f78GT6YP8vxufdG4K8eeY1Tc6cz4RoNfQfnboJJBQaLAYNmAMPIzx39gp17Gpx\u002B8\u002BORyP1KwNTMzky4xuD0FG6WwPpqyMq9MCnLcmsFgHazPVIWS5x\u002BFlxjcCOD10vHPxFYcKr8XJpOam6Imx2/nNbcIsimP6MPaqDwesnsbBEI6/xWbiQNDRtlAMq7KkRiePnQQfbO7uPx2Se43elkwrUYlAY3SvipwI3JKtcm63G0aI59eRyAt8\u002BdQKN54eCLfHXxa5478DwfvfthJtxgUZHC7acCSS5vvPK9tHI7sN8cHjuKfsWn0\u002B3S171MuMGw77N1ik3Lj28Fo/fgeq3KzaA8Fq7RrK6tbQs3WCSyuFlNXpqq0w7DsfBxNd8KNxg8q/DSwqQCreoOOiX/vuBGLHltcdKLnAq4eVBqcyz/HRzAs4pcyk8FHE9QrkpAP\u002Bk/\u002BFVfY97c4Lq5yZ\u002BmxYWrl7aFA\u002BQBz2T0wMuD40gS5WPuwzziTrPbbbDLrVN3Kzz16JPbwgE8A7msHuQKCscdf0P/KfJNy2vB1WkGidRD5/vidTfiD4FS2OEZQSHDk4IDarihFCKxvxhpJrQl7AtVx6P6e46zn8R/tERg78lV2WilESmxqOE/W8EQJsiW9AWFKIVnLXUdURsINe0QEHDm80p68H9tfwGfCJMVne1qSgAAAABJRU5ErkJggg==",
+              "WhenOpened": "2026-02-09T21:13:40.762Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

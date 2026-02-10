@@ -1,0 +1,23 @@
+<body>
+<h1>Welcome!</h1>
+
+<img th:src="@{/images/welcome.png}"/>
+
+<form method="POST" th:action="@{/insert}" th:object="${book}">
+
+    <div>
+        <label for="title">titolo:</label>
+        <input type="text" id="title" th:field="*{title}" placeholder="inserisci il titolo" required />
+    </div>
+    <div>
+        <label for="author">autore:</label>
+        <input type="text" id="author" th:field="*{author}" placeholder="inserisci l'autore" required />
+    </div>
+
+    <div>
+        <button type="submit">salva libro</button>
+    </div>
+</form>
+
+</body>
+</html>
