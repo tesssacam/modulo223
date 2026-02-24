@@ -5,6 +5,7 @@ import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -68,20 +69,24 @@ public class ProductController {
     }
 
     @PostMapping("/newproduct")
-    public String addProduct(@Valid @ModelAttribute Product product, // prendo dati form
-                             BindingResult result, // errori di validazione
+    public String addProduct(@Valid @ModelAttribute Product product,
+                             Errors errors,
                              Model model) {
 
-        if (result.hasErrors()) {
+        // controllo errori di validazione (es: campi vuoti)
+        if (errors.hasErrors()) {
             return "newproduct";
         }
 
-        if (products.containsKey(product.getId())) { // controllo id doppio
+        // controllo se esiste già un prodotto con stesso ID
+        if (products.containsKey(product.getId())) {
             model.addAttribute("error", "esiste già un prodotto con questo ID");
             return "error";
         }
 
-        products.put(product.getId(), product); // salvo prodotto
+        // salvo prodotto
+        products.put(product.getId(), product);
+
         return "redirect:/products";
     }
 }
