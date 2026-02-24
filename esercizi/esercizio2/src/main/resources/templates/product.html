@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>dettagli prodotto</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #f2f2f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 600px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .info {
+      font-size: 18px;
+      padding: 15px 0;
+      border-bottom: 1px solid #e5e5ea;
+    }
+
+    .label {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin-top: 35px;
+      text-decoration: none;
+      background-color: #007aff;
+      color: white;
+      padding: 14px;
+      border-radius: 18px;
+    }
+
+    .back-btn:hover {
+      background-color: #005ecb;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>DETTAGLI PRODOTTO</h1>
+
+  <div class="info"><span class="label">ID:</span> <span th:text="${product.id}"></span></div>
+  <div class="info"><span class="label">Nome:</span> <span th:text="${product.name}"></span></div>
+  <div class="info"><span class="label">Prezzo:</span> <span th:text="${product.price}"></span></div>
+  <div class="info"><span class="label">Scadenza:</span> <span th:text="${product.expirationDate}"></span></div>
+  <div class="info"><span class="label">Descrizione:</span> <span th:text="${product.description}"></span></div>
+
+  <b><a href="/products" class="back-btn">torna alla lista</a></b>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>lista prodotti</title>
+  <style>
+      body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+
+    .container {
+      width: 95%;
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+
+    .main-btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #002aff;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 18px;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .main-btn:hover {
+      background-color: #002aff;
+    }
+
+    /* TABELLA */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    /* HEADER */
+    th {
+      background-color: #002aff;
+      color: white;
+      padding: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    /* CELLE */
+    td {
+      padding: 22px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5ea;
+    }
+
+
+    tr:hover {
+      background-color: #f9f9fb;
+    }
+
+
+    .table-btn {
+      text-decoration: none;
+      background-color: #000;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>LISTA PRODOTTI</h1>
+
+  <b><center><a href="/newproduct" class="main-btn">nuovo Prodotto</a></center></b>
+
+  <table>
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+      <th>prezzo</th>
+      <th>scadenza</th>
+      <th>descrizione</th>
+      <th>dettagli</th>
+    </tr>
+
+    <tr th:each="p : ${products}">
+      <td th:text="${p.id}"></td>
+      <td th:text="${p.name}"></td>
+      <td th:text="${p.price}"></td>
+      <td th:text="${p.expirationDate}"></td>
+      <td th:text="${p.description}"></td>
+      <td>
+        <b><a th:href="@{'/products/show/' + ${p.id}}" class="table-btn">mostra</a></b>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+</body>
+</html>

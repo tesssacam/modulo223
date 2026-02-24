@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+
+        a {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+<b><h1 th:text="${error}">ERRORE</h1></b>
+<b><a href="/products">torna alla lista</a></b>
+</body>
+</html>
