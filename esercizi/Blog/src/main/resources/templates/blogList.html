@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Blog</h1>
+
+<!-- MENU (punto 8) -->
+<a href="/blog">Home</a>
+<a href="/blog/new">New Post</a>
+<a href="/blog/best">Best Posts</a>
+
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Likes</th>
+    <th>Action</th>
+  </tr>
+
+  <tr th:each="post : ${posts}">
+    <td>
+      <!-- link dettaglio -->
+      <a th:href="@{/blog/post(postid=${post.id})}" th:text="${post.title}"></a>
+    </td>
+
+    <td>
+      <!-- link autore -->
+      <a th:href="@{/blog/{author}(author=${post.author})}" th:text="${post.author}"></a>
+    </td>
+
+    <td th:text="${post.likenumber}"></td>
+
+    <td>
+      <!-- LIKE (punto 9) -->
+      <a th:href="@{/blog/like(postid=${post.id})}">Like</a>
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>

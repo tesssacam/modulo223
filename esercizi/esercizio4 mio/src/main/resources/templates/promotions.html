@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Promozioni Prodotti</title>
+</head>
+<body>
+<h1>Promozioni Prodotti</h1>
+<a href="/promotions/new">Nuova Promozione</a>
+<br/><br/>
+<a href="/promotions?activeOnly=true">Solo attive</a>
+<table border="1">
+  <tr>
+    <th>ID</th><th>Prodotto</th><th>Prezzo Originale</th>
+    <th>Sconto %</th><th>Prezzo Scontato</th>
+    <th>Inizio</th><th>Fine</th><th>Dettagli</th>
+  </tr>
+  <tr th:each="p : ${promotions}">
+    <td th:text="${p.id}"></td>
+    <td th:text="${p.productName}"></td>
+    <td th:text="${p.originalPrice}"></td>
+    <td th:text="${p.discountPercent}"></td>
+    <td th:text="${p.discountedPrice}"></td>
+    <td th:text="${p.startDate}"></td>
+    <td th:text="${p.endDate}"></td>
+    <td><a th:href="@{'/promotions/show/' + ${p.id}}">Mostra</a></td>
+  </tr>
+</table>
+</body>
+</html>

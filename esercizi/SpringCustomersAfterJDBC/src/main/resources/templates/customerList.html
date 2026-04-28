@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+
+    <style>
+
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        /* SFONDO ULTRA */
+        body {
+            background: radial-gradient(circle at top, #1e3c72, #0a192f);
+            overflow-x: hidden;
+            color: white;
+            padding: 40px;
+        }
+
+        /* LUCE IN MOVIMENTO */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0,150,255,0.15) 0%, transparent 60%);
+            animation: moveLight 10s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes moveLight {
+            0% { transform: translate(-25%, -25%); }
+            50% { transform: translate(-10%, -40%); }
+            100% { transform: translate(-25%, -25%); }
+        }
+
+        /* HEADER CON BOTTONE */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* TITOLO */
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* BOTTONE */
+        .add-btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .add-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,150,255,0.6);
+        }
+
+        /* LUCE SUL BOTTONE */
+        .add-btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+            transition: 0.5s;
+        }
+
+        .add-btn:hover::after {
+            left: 100%;
+        }
+
+        /* CONTENITORE */
+        .table-container {
+            backdrop-filter: blur(20px);
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 40px rgba(0,119,255,0.3);
+            animation: slideUp 1s ease;
+        }
+
+        /* TABELLA */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* HEADER TABELLA */
+        thead {
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+        }
+
+        /* CELLE */
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* RIGHE */
+        tbody tr {
+            position: relative;
+            transition: 0.3s;
+            animation: rowFade 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        /* DELAY ANIMAZIONE */
+        tbody tr:nth-child(1) { animation-delay: 0.1s; }
+        tbody tr:nth-child(2) { animation-delay: 0.2s; }
+        tbody tr:nth-child(3) { animation-delay: 0.3s; }
+        tbody tr:nth-child(4) { animation-delay: 0.4s; }
+        tbody tr:nth-child(5) { animation-delay: 0.5s; }
+
+        /* HOVER RIGHE */
+        tbody tr:hover {
+            transform: scale(1.02);
+            background: rgba(0,150,255,0.2);
+            box-shadow: 0 0 20px rgba(0,150,255,0.6);
+        }
+
+        /* LUCE CHE SCORRE */
+        tbody tr::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: 0.5s;
+        }
+
+        tbody tr:hover::after {
+            left: 100%;
+        }
+
+        /* ANIMAZIONI */
+        @keyframes rowFade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Customers</h1>
+
+    <!-- BOTTONE -->
+    <a href="customers/insert" class="add-btn">+ New Customer</a>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>CC Number</th>
+            <th>CC Expiration</th>
+            <th>CC_CVV</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="customer : ${customers}">
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.surname}"></td>
+            <td th:text="${customer.age}"></td>
+            <td th:text="${customer.city}"></td>
+            <td th:text="${customer.ccnumber}"></td>
+            <td th:text="${customer.ccexpiration}"></td>
+            <td th:text="${customer.cccvv}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

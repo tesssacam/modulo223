@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Nuova Promozione</title></head>
+<body>
+<h1>Nuova Promozione</h1>
+<form th:action="@{/promotions/new}" th:object="${promotion}" method="post">
+  <label>ID</label><input type="number" th:field="*{id}"/><br/>
+  <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span><br/>
+
+  <label>Prodotto</label><input type="text" th:field="*{productName}"/><br/>
+  <span th:if="${#fields.hasErrors('productName')}" th:errors="*{productName}"></span><br/>
+
+  <label>Prezzo Originale</label><input type="number" step="0.01" th:field="*{originalPrice}"/><br/>
+  <span th:if="${#fields.hasErrors('originalPrice')}" th:errors="*{originalPrice}"></span><br/>
+
+  <label>Sconto %</label><input type="number" step="0.01" th:field="*{discountPercent}"/><br/>
+  <span th:if="${#fields.hasErrors('discountPercent')}" th:errors="*{discountPercent}"></span><br/>
+
+  <label>Inizio</label><input type="date" th:field="*{startDate}"/><br/>
+  <span th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"></span><br/>
+
+  <label>Fine</label><input type="date" th:field="*{endDate}"/><br/>
+  <span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"></span><br/>
+
+  <button type="submit">Salva</button>
+</form>
+</body>
+</html>

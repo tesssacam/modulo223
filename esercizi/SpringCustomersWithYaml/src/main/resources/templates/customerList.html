@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #d63384;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #a64d79;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Bottone aggiunta */
+        .add-btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #ff4da6, #ff80bf);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+
+        .add-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 77, 166, 0.3);
+        }
+
+        /* Tabella container */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(214, 51, 132, 0.15);
+        }
+
+        /* Header tabella */
+        thead {
+            background: linear-gradient(135deg, #ff4da6, #ff80bf);
+        }
+
+        th {
+            padding: 14px;
+            text-align: left;
+            font-size: 13px;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* Celle */
+        td {
+            padding: 14px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* Righe */
+        tbody tr {
+            border-bottom: 1px solid rgba(255, 192, 203, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        tbody tr:nth-child(even) {
+            background: rgba(255, 240, 246, 0.6);
+        }
+
+        tbody tr:hover {
+            background: rgba(255, 192, 203, 0.25);
+            transform: scale(1.01);
+        }
+
+        /* Colonne carta */
+        td:nth-child(6),
+        td:nth-child(7),
+        td:nth-child(8) {
+            font-family: monospace;
+            color: #b03060;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Customers</h1>
+
+    <!-- BOTTONE -->
+    <a href="customers/insert" class="add-btn">+ New Customer</a>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>CC Number</th>
+            <th>CC Expiration</th>
+            <th>CC_CVV</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="customer : ${customers}">
+            <td th:text="${customer.id}"></td>
+            <td th:text="${customer.name}"></td>
+            <td th:text="${customer.surname}"></td>
+            <td th:text="${customer.age}"></td>
+            <td th:text="${customer.city}"></td>
+            <td th:text="${customer.ccnumber}"></td>
+            <td th:text="${customer.ccexpiration}"></td>
+            <td th:text="${customer.cccvv}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

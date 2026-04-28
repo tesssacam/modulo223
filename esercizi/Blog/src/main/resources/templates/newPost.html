@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>New Post</h1>
+
+<form th:object="${post}" method="post">
+
+  <input th:field="${post.title}" placeholder="Title"/>
+  <span th:errors="${post.title}"></span>
+
+  <input th:field="${post.publicationdate}" placeholder="Date"/>
+  <span th:errors="${post.publicationdate}"></span>
+
+  <input th:field="${post.category}" placeholder="Category"/>
+  <span th:errors="${post.category}"></span>
+
+  <input th:field="${post.author}" placeholder="Author"/>
+  <span th:errors="${post.author}"></span>
+
+  <input type="number" th:field="${post.likenumber}" placeholder="Likes"/>
+
+  <!-- TEXTAREA (punto 2) -->
+  <textarea th:field="${post.content}"></textarea>
+
+  <button type="submit">Save</button>
+</form>
+
+</body>
+</html>

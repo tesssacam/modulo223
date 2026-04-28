@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dettaglio Articolo</title>
+</head>
+<body>
+<h1>Dettaglio Articolo</h1>
+
+<p>ID: <span th:text="${article.id}"></span></p>
+<p>Titolo: <span th:text="${article.title}"></span></p>
+<p>Autore: <span th:text="${article.author}"></span></p>
+<p>Pagine: <span th:text="${article.pages}"></span></p>
+<p>Eliminato: <span th:text="${article.deleted}"></span></p>
+
+<a href="/articles">Torna Lista</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Dettagli Promozione</title></head>
+<body>
+<h1>Dettagli Promozione</h1>
+<div>ID: <span th:text="${promotion.id}"></span></div>
+<div>Prodotto: <span th:text="${promotion.productName}"></span></div>
+<div>Prezzo Originale: <span th:text="${promotion.originalPrice}"></span></div>
+<div>Sconto %: <span th:text="${promotion.discountPercent}"></span></div>
+<div>Prezzo Scontato: <span th:text="${promotion.discountedPrice}"></span></div>
+<div>Inizio: <span th:text="${promotion.startDate}"></span></div>
+<div>Fine: <span th:text="${promotion.endDate}"></span></div>
+<a href="/promotions">Torna alla lista</a>
+</body>
+</html>

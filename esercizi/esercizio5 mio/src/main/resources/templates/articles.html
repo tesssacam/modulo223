@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Articoli attivi</title>
+</head>
+<body>
+<h1>Articoli attivi</h1>
+
+<a href="/articles/new">Nuovo Articolo</a> |
+<a href="/articles/deleted">Articoli Eliminati</a>
+
+<table border="1">
+  <tr>
+    <th>ID</th><th>Titolo</th><th>Autore</th><th>Pagine</th><th>Azioni</th>
+  </tr>
+  <tr th:each="a : ${articles}">
+    <td th:text="${a.id}"></td>
+    <td th:text="${a.title}"></td>
+    <td th:text="${a.author}"></td>
+    <td th:text="${a.pages}"></td>
+    <td>
+      <a th:href="@{'/articles/show/' + ${a.id}}">Dettagli</a> |
+      <a th:href="@{'/articles/delete/' + ${a.id}}">Elimina</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

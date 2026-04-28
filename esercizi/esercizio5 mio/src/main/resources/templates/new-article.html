@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Nuovo Articolo</title>
+</head>
+<body>
+<h1>Nuovo Articolo</h1>
+
+<form th:action="@{/articles/new}" th:object="${article}" method="post">
+  <label>ID</label>
+  <input type="number" th:field="*{id}"/>
+  <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span><br/>
+
+  <label>Titolo</label>
+  <input type="text" th:field="*{title}"/>
+  <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span><br/>
+
+  <label>Autore</label>
+  <input type="text" th:field="*{author}"/>
+  <span th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span><br/>
+
+  <label>Pagine</label>
+  <input type="number" th:field="*{pages}"/>
+  <span th:if="${#fields.hasErrors('pages')}" th:errors="*{pages}"></span><br/>
+
+  <button type="submit">Salva</button>
+</form>
+</body>
+</html>

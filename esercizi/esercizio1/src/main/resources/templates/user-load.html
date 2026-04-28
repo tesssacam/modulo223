@@ -5,17 +5,17 @@
 </head>
 <body>
 
-    <h2>Caricamento utente</h2>
+<h2>Caricamento utente</h2>
 
-    <!-- Se c’è errore -->
-    <p th:if="${error}" th:text="${error}"></p>
+<!-- Se esiste errore -->
+<p th:if="${error}" th:text="${error}"></p>
 
-    <!-- Se utente trovato -->
-    <div th:if="${user}">
-        <p>ID: <span th:text="${user.id}"></span></p>
-        <p>Name: <span th:text="${user.name}"></span></p>
-        <p>Surname: <span th:text="${user.surname}"></span></p>
-    </div>
+<!-- Se utente esiste -->
+<div th:if="${user}">
+    <p>ID: <span th:text="${user.id}"></span></p>
+    <p>Name: <span th:text="${user.name}"></span></p>
+    <p>Surname: <span th:text="${user.surname}"></span></p>
+</div>
 
 </body>
 </html>

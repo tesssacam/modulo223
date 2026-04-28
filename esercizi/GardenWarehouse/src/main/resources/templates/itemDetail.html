@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Detail</title>
+</head>
+<body>
+<h1 th:text="${item.name}"></h1>
+<p>Code: <span th:text="${item.code}"></span></p>
+<p>Type: <span th:text="${item.type}"></span></p>
+<p>Price: <span th:text="${item.price}"></span></p>
+<p>Quantity: <span th:text="${item.itemCount}"></span></p>
+
+<a th:href="@{/items/sell(code=${item.code})}">Sell 1</a>
+<form th:action="@{/items/add}" method="get">
+    <input type="hidden" name="code" th:value="${item.code}"/>
+    <input type="number" name="number" min="1" placeholder="Add quantity"/>
+    <button type="submit">Add</button>
+</form>
+
+<a href="/items">back to list</a>
+</body>
+</html>

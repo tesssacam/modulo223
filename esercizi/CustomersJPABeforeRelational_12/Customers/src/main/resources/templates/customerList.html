@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<nav class="main-nav">
+    <a href="/customers">Customer list</a>
+    <a href="/customers/insert">New Customer</a>
+</nav>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="customer : ${customers}">
+        <td th:text="${customer.id}"></td>
+        <td th:text="${customer.name}"></td>
+        <td th:text="${customer.surname}"></td>
+        <td th:text="${customer.age}"></td>
+        <td th:text="${customer.address.street}"></td>
+        <td th:text="${customer.address.num}"></td>
+        <td th:text="${customer.address.zip}"></td>
+        <td th:text="${customer.address.city}"></td>
+        <td th:text="${customer.address.nation}"></td>
+
+    </tr>
+
+
+    </tbody>
+</table>
+
+
+<!--Search by surname-->
+<div class="search-container">
+    <input type="text" id="surnameInput" min="1">
+    <button type="button" th:onclick="searchBySurname()">Search by surname</button>
+</div>
+
+<br>
+
+<!--Search by age-->
+<div class="search-container">
+    <input type="number" id="ageInput" min="1">
+    <button type="button" th:onclick="sendSearch()">Search by age under</button>
+</div>
+
+<script>
+    function searchBySurname() {
+        const surname = document.getElementById('surnameInput').value;
+        if (surname) {
+            // Reindirizza all'URL desiderato
+            window.location.href = '/customers/' + surname;
+        } else {
+            alert("Insert a surname");
+        }
+    }
+
+    function sendSearch() {
+        const age = document.getElementById('ageInput').value;
+        if (age) {
+            // Reindirizza all'URL desiderato
+            window.location.href = '/customers/under/' + age;
+        } else {
+            alert("Insert an age");
+        }
+    }
+</script>
+
+
+</body>
+</html>
