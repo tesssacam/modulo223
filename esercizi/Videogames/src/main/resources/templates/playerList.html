@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Players</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<nav class="main-nav">
+    <a href="/players">Players list</a>
+    <a href="/players/insert">New Player</a>
+</nav>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Cognome</th>
+        <th>Età</th>
+        <th>Ruolo</th>
+        <th>Numero Maglia</th>
+        <th>Team</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="customer : ${players}">
+        <td th:text="${players.nome}"></td>
+        <td th:text="${players.cognome}"></td>
+        <td th:text="${players.eta}"></td>
+        <td th:text="${players.ruolo}"></td>
+        <td th:text="${players.numero_maglia}"></td>
+        <td th:text="${players.team}"></td>
+        <td th:text="${players.gameProfile.username}"></td>
+        <td th:text="${players.gameProfile.livello}"></td>
+        <td th:text="${players.gameProfile.punti}"></td>
+        <td th:text="${players.gameProfile.data_creazione}"></td>
+
+    </tr>
+
+
+    </tbody>
+</table>
+
+
+<!--Search by surname-->
+<div class="search-container">
+    <input type="text" id="cognomeInput" min="1">
+    <button type="button" th:onclick="searchByCognome()">Search by cognome</button>
+</div>
+
+<br>
+
+<!--Search by age-->
+<div class="search-container">
+    <input type="number" id="etaInput" min="1">
+    <button type="button" th:onclick="sendSearch()">Search by eta under</button>
+</div>
+
+<script>
+    function searchByCognome() {
+        const cognome = document.getElementById('cognomeInput').value;
+        if (cognome) {
+            // Reindirizza all'URL desiderato
+            window.location.href = '/players/' + cognome;
+        } else {
+            alert("Inserisci un cognome");
+        }
+    }
+
+    function sendSearch() {
+        const eta = document.getElementById('etaInput').value;
+        if (eta) {
+            // Reindirizza all'URL desiderato
+            window.location.href = '/players/under/' + eta;
+        } else {
+            alert("Inserisci un'età");
+        }
+    }
+</script>
+
+
+</body>
+</html>

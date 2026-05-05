@@ -1,0 +1,43 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    defer-datasource-initialization: true
+
+  datasource:
+    generate-unique-name: false
+
+---
+
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  sql:
+    init:
+      data-locations:
+        - classpath:/db/teamData.sql
+        - classpath:/db/playerData.sql
+        - classpath:/db/profileData.sql
+
+server:
+  port: 8080
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  sql:
+    init:
+      data-locations:
+        - classpath:/db/playerData.sql
+        - classpath:/db/teamData.sql
+
+server:
+  port: 8090
+
