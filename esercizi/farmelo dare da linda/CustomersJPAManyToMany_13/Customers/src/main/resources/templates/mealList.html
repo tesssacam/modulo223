@@ -1,0 +1,34 @@
+<div th:each="mealGroup: ${mealGroups}">
+  <div class="mytable-header" th:text="'ospiti del gruppo'+' '+{mealGroup.name} + ': '"></div>
+  <table>
+    <thead>
+    <th th:text="nome"></th>
+    <th th:text="cognome"></th>
+    </thead>
+    <tbody>
+    <tr th:each="customer: ${mealGroup.customers}">
+      <td th:text="${customer.name}"></td>
+      <td th:text="${customer.surname}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<form th:action="@{/customers/addcustomer-to-mealgroup}" method="post">
+  <label for="customerId">Customer:</label>
+  <select name="customerId" id="customerId">
+    <option th:each="customer: ${customers}"
+            th:value="${customer.id}"
+            th:text="${customer.name} + ' ' + ${customer.surname}">
+    </option>
+  </select>
+
+  <label for="mealGroupId">Meal group:</label>
+  <select name="mealGroupId" id="mealGroupId">
+    <option th:each="mealGroup: ${mealGroups}"
+            th:value="${mealGroup.id}"
+            th:text="${mealGroup.name}">
+    </option>
+  </select>
+
+  <button type="submit">Aggiungi</button>
+</form>

@@ -43,7 +43,7 @@ public class PlayerController{
             return "insertPlayer";
         }
         playerService.save(player);
-        return "redirect:/customers";
+        return "redirect:/players";
     }
 
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservations</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<nav class="main-nav">
+  <a href="/customers">Customer list</a>
+  <a href="/customers/reservations">Reservation list</a>
+</nav>
+
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Age</th>
+    <th>Reservation ID</th>
+    <th>Room</th>
+    <th>Check-in</th>
+    <th>Check-out</th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+  <tr th:each="reservation : ${reservations}">
+    <td th:text="${reservation.customer.id}"></td>
+    <td th:text="${reservation.customer.name}"></td>
+    <td th:text="${reservation.customer.surname}"></td>
+    <td th:text="${reservation.customer.age}"></td>
+    <td th:text="${reservation.id}"></td>
+    <td th:text="${reservation.room}"></td>
+    <td th:text="${reservation.checkin}"></td>
+    <td th:text="${reservation.checkout}"></td>
+  </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
