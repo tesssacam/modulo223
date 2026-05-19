@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New movie</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<div><a href="/actors/add-actor">Insert new actor</a></div>
+<div><a href="/directors/add-director">Insert new director</a></div>
+<div><a href="/movies/add-movie">Insert new movie</a></div>
+<div><a href="/movies">Movies</a></div>
+<div><a href="/movies/add-actors-to-movie">Add actor to movie</a></div>
+
+
+<h1>Add actor to a movie</h1>
+<form action="/movies/add-actors-to-movie" method="post">
+    <select name="movieId">
+        <option value="" selected>Select a movie</option>
+        <option th:each="movie : ${movies}" th:value="${movie.id}" th:text="${movie.title}"></option>
+    </select>
+
+    <ul>
+        <li th:each="actor : ${actors}" class="actor-checkbox-container">
+            <input type="checkbox" th:value="${actor.id}" name="selectedActors" th:id="${'actor' + actor.id}" />
+            <label th:for="${'actor' + actor.id}" th:text="${actor.name + ' ' + actor.surname}"></label>
+        </li>
+    </ul>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+

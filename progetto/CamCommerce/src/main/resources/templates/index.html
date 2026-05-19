@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MotoLux Shop</title>
+
+    <link rel="stylesheet" th:href="@{./static/style.css}" type="text/css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="main-nav">
+    <a href="/categories">Categorie</a>
+    <a href="/products">Prodotti</a>
+    <a href="/promotions">Promozioni</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>🏍️ MotoLux Store</h1>
+    <p>Equipaggiamento premium per motociclisti</p>
+</section>
+
+<!-- CATEGORIE DINAMICHE -->
+<section>
+    <h2>Categorie</h2>
+
+    <div class="categories">
+
+        <div class="category"
+             th:each="category : ${categories}">
+            <h3 th:text="${category.name}"></h3>
+            <p th:text="${category.description}"></p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODOTTI DINAMICI -->
+<section>
+    <h2>🔥 Prodotti in evidenza</h2>
+
+    <div class="products">
+
+        <div class="product-card"
+             th:each="product : ${products}">
+
+            <!-- IMMAGINE DAL DATABASE -->
+            <img th:src="${product.imageUrl}" alt="product image">
+
+            <!-- NOME PRODOTTO -->
+            <h3 th:text="${product.name}"></h3>
+
+            <!-- DESCRIZIONE -->
+            <p th:text="${product.description}"></p>
+
+            <!-- PREZZO -->
+            <p>
+                💰
+                <span th:text="${product.price}"></span> CHF
+            </p>
+
+            <!-- CATEGORIA -->
+            <p>
+                📂
+                <span th:text="${product.category.name}"></span>
+            </p>
+
+            <!-- BOTTONE -->
+            <button>Aggiungi al carrello</button>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMOZIONI DINAMICHE -->
+<section>
+    <h2>🎁 Promozioni attive</h2>
+
+    <div class="promotions">
+
+        <div class="promotion"
+             th:each="promo : ${promotions}">
+
+            <h3 th:text="${promo.name}"></h3>
+
+            <p th:text="${promo.description}"></p>
+
+            <p>
+                🔥 Sconto:
+                <span th:text="${promo.discountPercent}"></span>%
+            </p>
+
+            <p>
+                📅
+                <span th:text="${promo.startDate}"></span>
+                →
+                <span th:text="${promo.endDate}"></span>
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

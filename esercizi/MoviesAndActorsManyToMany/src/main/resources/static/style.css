@@ -1,0 +1,187 @@
+/* --- STILI GENERALI --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 20px auto;
+    max-width: 1100px; /* Più largo per far stare bene la tabella */
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* --- STILE TABELLA (Pagina List) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+tbody tr:hover {
+    background-color: #f1f4f7;
+}
+
+/* Bottoni dentro la tabella (Sell One) */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* --- STILE FORM (Pagina Insert) --- */
+/* Uso il selettore 'form' ma specifico gli input interni */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 20px auto; /* Centra il form */
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Applichiamo lo stile solo agli input del form, non a quelli globali */
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Impedisce l'uscita dai bordi */
+}
+
+/* Il bottone 'SAVE' del form lo facciamo diverso dai bottoni tabella */
+form button {
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Allineamento checkbox attori */
+.actor-checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px !important;
+}
+
+.actor-checkbox-container input[type="checkbox"] {
+    width: auto !important;
+    margin: 0;
+}
+
+.actor-checkbox-container label {
+    display: inline-block;
+    margin: 0;
+    font-weight: normal;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* --- ERRORI E NAVIGAZIONE --- */
+.validationError {
+    color: #e74c3c;
+    font-size: 12px;
+    display: block;
+    margin-top: 4px;
+}
+
+.nav-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav-links a, div a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.nav-links a:hover, div a:hover {
+    text-decoration: underline;
+}
+
+
+.main-nav {
+    text-align: center;
+    background-color: #2c3e50; /* Lo stesso blu scuro della tabella */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.main-nav a {
+    color: white !important;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.main-nav a:hover {
+    color: #3498db !important; /* Diventa azzurro al passaggio del mouse */
+    text-decoration: none !important;
+}
+
+.mytable-header {
+    background-color: #993e50;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+

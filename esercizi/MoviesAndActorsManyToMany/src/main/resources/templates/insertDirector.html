@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New director</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<div><a href="/actors/add-actor">Insert new actor</a></div>
+<div><a href="/directors/add-director">Insert new director</a></div>
+<div><a href="/movies/add-movie">Insert new movie</a></div>
+<div><a href="/movies">Movies</a></div>
+<div><a href="/movies/add-actors-to-movie">Add actor to movie</a></div>
+
+<h1>Insert new director</h1>
+<form method="POST" th:object="${director}">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" th:field="${director.name}"/>
+        <span class="validationError" th:if="${#fields.hasErrors('name')}"
+              th:errors="${director.name}">Name Error</span>
+    </div>
+    <div>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" th:field="${director.surname}"/>
+        <span class="validationError" th:if="${#fields.hasErrors('surname')}"
+              th:errors="${director.surname}">Surname Error</span>
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+
+
+</body>
+</html>
+

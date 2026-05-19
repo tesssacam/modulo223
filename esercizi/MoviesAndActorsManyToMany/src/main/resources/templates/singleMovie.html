@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<div><a href="/actors/add-actor">Insert new actor</a></div>
+<div><a href="/directors/add-director">Insert new director</a></div>
+<div><a href="/movies/add-movie">Insert new movie</a></div>
+<div><a href="/movies">Movies</a></div>
+<div><a href="/movies/add-actors-to-movie">Add actor to movie</a></div>
+
+<h1>Single Movie</h1>
+
+<p th:text="'Movie: ' + ${movie.title}"></p>
+<p th:text="'Director: ' + ${movie.director.name + ' ' + movie.director.surname}"></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Actors</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="actor : ${movie.actors}">
+        <td th:text="${actor.name + ' ' + actor.surname}"></td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>

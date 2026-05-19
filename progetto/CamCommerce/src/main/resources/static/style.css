@@ -1,0 +1,191 @@
+/* =========================
+   BASE
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: #111;
+    border-bottom: 2px solid #d10000;
+}
+
+.main-nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #d10000;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #111, #1a1a1a);
+    border-bottom: 1px solid #222;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #d10000;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* =========================
+   TITOLI SEZIONI
+========================= */
+
+h2 {
+    padding: 20px 30px;
+    color: #d10000;
+}
+
+/* =========================
+   CATEGORIE
+========================= */
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 30px;
+}
+
+.category {
+    background-color: #151515;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 180px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #d10000;
+    color: black;
+}
+
+/* =========================
+   PRODOTTI
+========================= */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 0 30px 40px;
+}
+
+.product-card {
+    background-color: #151515;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 10px;
+}
+
+.product-card p {
+    margin: 10px;
+    color: #ccc;
+}
+
+.product-card span {
+    color: #d10000;
+    font-weight: bold;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d10000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff1e1e;
+}
+
+/* =========================
+   PROMOZIONI
+========================= */
+
+.promotions {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 30px 40px;
+}
+
+.promotion {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    border-left: 3px solid #d10000;
+}
+
+.promotion h3 {
+    color: #d10000;
+}
+
+.promotion p {
+    color: #ccc;
+}
+
+/* =========================
+   FOOTER (se lo aggiungi dopo)
+========================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #777;
+    margin-top: 40px;
+}

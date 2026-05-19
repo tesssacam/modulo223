@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New movie</title>
+</head>
+<link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+<body>
+
+<div><a href="/actors/add-actor">Insert new actor</a></div>
+<div><a href="/directors/add-director">Insert new director</a></div>
+<div><a href="/movies/add-movie">Insert new movie</a></div>
+<div><a href="/movies">Movies</a></div>
+<div><a href="/movies/add-actors-to-movie">Add actor to movie</a></div>
+
+<h1>Insert new movie</h1>
+<form method="POST" th:object="${movie}">
+    <div>
+        <label for="name">Title:</label>
+        <input type="text" id="name" th:field="${movie.title}"/>
+        <span class="validationError" th:if="${#fields.hasErrors('title')}"
+              th:errors="${movie.title}">Name Error</span>
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <input type="text" id="description" th:field="${movie.description}"/>
+        <span class="validationError" th:if="${#fields.hasErrors('description')}"
+              th:errors="${movie.description}">Description Error</span>
+    </div>
+
+    <div>
+        <label for="director">Director:</label>
+        <select th:field="${movie.director}" id="director">
+            <option value="">Regista</option>
+            <option th:each="director : ${directors}"
+                    th:value="${director.id}"
+                    th:text="${director.name + ' ' + director.surname}"></option>
+        </select>
+    </div>
+
+    <div>
+        <label>Actors:</label>
+        <div th:each="actor : ${actors}" class="actor-checkbox-container">
+            <input type="checkbox" th:field="${movie.actors}" th:value="${actor.id}" th:id="${'actor' + actor.id}">
+            <label  th:for="${'actor' + actor.id}" th:text="${actor.name + ' ' + actor.surname}"></label>
+        </div>
+    </div>
+
+
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+
+
+</body>
+</html>
+
